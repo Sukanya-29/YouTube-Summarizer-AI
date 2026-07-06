@@ -32,7 +32,7 @@ A multi-page Streamlit application designed to extract insights, perform Questio
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/Sukanya-29/YouTube-Summarizer-AI.git](https://github.com/Sukanya-29/YouTube-Summarizer-AI.git)
-cd YouTube-Summarizer-AI
+cd YouTube-Summarizer-AI ```
 
 ### 2. Install Dependencies
 Ensure you have Python installed, then run:
