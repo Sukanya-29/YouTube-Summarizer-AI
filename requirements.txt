@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-text-splitters
+pytubefix
+faiss-cpu
+python-dotenv
+fpdf
