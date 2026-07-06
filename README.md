@@ -30,25 +30,25 @@ A multi-page Streamlit application designed to extract insights, perform Questio
 ## Setup and Installation
 
 ### 1. Clone the Repository
-```bash
+
 git clone [https://github.com/Sukanya-29/YouTube-Summarizer-AI.git](https://github.com/Sukanya-29/YouTube-Summarizer-AI.git)
-cd YouTube-Summarizer-AI ```
+cd YouTube-Summarizer-AI 
 
 ### 2. Install Dependencies
 Ensure you have Python installed, then run:
-```bash
+
 pip install -r requirements.txt
 
 
 ### 3. Configure Environment Variables
 Create a file named .env in the root directory and add your Groq API credentials:
-```bash
+
 groq_api=your_actual_groq_api_key_here
 
 
 ### 4. Run the Application
 Launch the server using Streamlit:
-```bash
+
 streamlit run nav.py
 
 
