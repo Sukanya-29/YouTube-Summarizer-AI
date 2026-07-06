@@ -35,21 +35,15 @@ git clone [https://github.com/Sukanya-29/YouTube-Summarizer-AI.git](https://gith
 <br> cd YouTube-Summarizer-AI 
 
 ### 2. Install Dependencies
-Ensure you have Python installed, then run:
 
 pip install -r requirements.txt
 
-
 ### 3. Configure Environment Variables
-Create a file named .env in the root directory and add your Groq API credentials:
 
 groq_api=your_actual_groq_api_key_here
 
-
 ### 4. Run the Application
-Launch the server using Streamlit:
 
 streamlit run nav.py
-
 
 
