@@ -25,7 +25,7 @@ A multi-page Streamlit application designed to extract insights, perform Questio
 ├── notes.py        # Automated text summarization pipeline and PDF generator
 └── .gitignore      # Specifies untracked files to ignore (e.g., .env, __pycache__)
 
----
+
 
 ## Setup and Installation
 
@@ -45,5 +45,3 @@ groq_api=your_actual_groq_api_key_here
 ### 4. Run the Application
 
 streamlit run nav.py
-
-
