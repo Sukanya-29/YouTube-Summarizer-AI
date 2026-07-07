@@ -1,4 +1,4 @@
-# YouTube RAG Assistant
+# YouTube Transcript RAG Engine
 
 A multi-page Streamlit application designed to extract insights, perform Question-Answering (QnA), and automatically generate comprehensive study notes directly from YouTube video transcripts. The system leverages LangChain, Groq (Llama 3.1), and FAISS vector embeddings to deliver accurate, context-aware responses.
 
