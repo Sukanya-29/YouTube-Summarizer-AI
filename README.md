@@ -20,9 +20,9 @@ A multi-page Streamlit application designed to extract insights, perform Questio
 
 ## Project Structure
 
-├── app.py          # Chat interface and RAG-based QnA pipeline
-├── nav.py          # Main entry point managing application navigation and configuration
-├── notes.py        # Automated text summarization pipeline and PDF generator
+├── app.py          # Chat interface and RAG-based QnA pipeline <br>
+├── nav.py          # Main entry point managing application navigation and configuration <br>
+├── notes.py        # Automated text summarization pipeline and PDF generator <br>
 └── .gitignore      # Specifies untracked files to ignore (e.g., .env, __pycache__)
 
 ---
