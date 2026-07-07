@@ -25,7 +25,7 @@ A multi-page Streamlit application designed to extract insights, perform Questio
 ├── notes.py        # Automated text summarization pipeline and PDF generator
 └── .gitignore      # Specifies untracked files to ignore (e.g., .env, __pycache__)
 
-
+---
 
 ## Setup and Installation
 
