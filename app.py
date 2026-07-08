@@ -10,9 +10,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chat_models import init_chat_model
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-# import dotenv
-# import os 
-
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
@@ -57,22 +54,13 @@ def create_vector_store(url):
         return vector_store.as_retriever(), author
     
     except Exception as e:
-        # Catches specific YouTube errors (Private videos, No captions)
         raise Exception(f"YouTube Error: {str(e)}")
 
 with st.sidebar:
-    # st.header("Settings")
-
-    # if not groq_api:
-    #     groq_api = st.text_input("Enter Groq API Key", type="password")
-    # else:
-    #     st.success("API Key loaded from environment")
-    
-    # url = st.text_input("Paste YouTube Video URL:", placeholder= "https://www.youtube.com/watch?v=...")
     analyze_clicked = st.button("Analyze Video")
 
-st.title("Youtube RAG system") 
-st.subheader("QnA")
+st.title("🤖 Youtube RAG system") 
+st.subheader("💬 Interactive QnA")
 st.markdown("Extract insights and ask questions about any YouTube video transcript.")
 
 msgs = StreamlitChatMessageHistory(key="chat_messages")
@@ -82,7 +70,6 @@ with chat_container:
     for msg in msgs.messages:
         st.chat_message(msg.type).write(msg.content)
         
-
 if not groq_api:
     st.warning("Please provide a Groq API key to start.")
     st.stop()
@@ -97,7 +84,6 @@ if url != st.session_state.last_url:
         del st.session_state.retriever
     msgs.clear()
     st.session_state.last_url = url
-
 
 if analyze_clicked:
     if url:
@@ -163,32 +149,3 @@ else:
             except Exception as e:
                 st.error(f"An error occurred while generating the answer: {e}")
 
-
-
-
-
-
-                # prompt=f"""
-                        #     You are an AI assistant. 
-                        #     Your task is to answer the given question using the provided context. 
-                        #     Always produce a well-structured, organized, and skimmable output. 
-                        #     Use clear headings, bullet points, and tables when appropriate. 
-                        #     Keep the response concise, accurate, and easy to understand. 
-                        #     Do not mention the context source or meta-instructions. 
-                        #     Focus only on delivering the answer in a professional and engaging format.
-
-                        #     Context:
-                        #     {context_text}
-
-                        #     Question:
-                        #     {query}
-
-                        #     Output requirements:
-                        #     - Provide a direct answer to the question.
-                        #     - Organize information into sections with headings.
-                        #     - Use bullet points or numbered lists for clarity.
-                        #     - Include tables if comparisons are needed.
-                        #     - Avoid filler phrases like "according to the context" or "based on the document".
-                        #     - Keep the tone informative, clear, and engaging.
-                        #     """
-                 
