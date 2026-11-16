@@ -49,6 +49,7 @@ Create a `.env` file in the root directory and add your Groq API key:
 
 ```env
 GROQ_API_KEY=your_actual_groq_api_key_here
+```
 
 ### 4. Run the Application
 
