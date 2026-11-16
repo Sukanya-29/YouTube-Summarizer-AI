@@ -45,8 +45,16 @@ pip install -r requirements.txt
 
 ### 3. Configure Environment Variables
 
-groq_api=your_actual_groq_api_key_here
+Create a `.env` file in the root directory and add your Groq API key:
+
+```env
+GROQ_API_KEY=your_actual_groq_api_key_here
 
 ### 4. Run the Application
 
 streamlit run nav.py
+
+---
+
+## Final Verdict
+The project architecture itself is solid—using HuggingFace embeddings locally with FAISS avoids external API embedding costs, and implementing a Map-Reduce approach for long video transcripts shows you understand context window limitations. Fix the environment variable name (`GROQ_API_KEY`), deploy it on Streamlit Cloud for a live link, and add a few badges, and this README is interview-ready.
