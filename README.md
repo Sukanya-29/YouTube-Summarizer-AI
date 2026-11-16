@@ -1,5 +1,10 @@
 # YouTube Transcript RAG Engine
 
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com)
+[![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+
 A multi-page Streamlit application designed to extract insights, perform Question-Answering (QnA), and automatically generate comprehensive study notes directly from YouTube video transcripts. The system leverages LangChain, Groq (Llama 3.1), and FAISS vector embeddings to deliver accurate, context-aware responses.
 
 ## Features
